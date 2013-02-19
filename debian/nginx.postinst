@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" != "configure" ]; then
+    exit 0
+fi
+
+if [ -x "/etc/init.d/nginx" ]; then
+    if [ -f "/var/run/nginx.pid" ] && kill -0 `cat /var/run/nginx.pid` >/dev/null; then
+        /etc/init.d/nginx upgrade || true 
+    else
+        update-rc.d nginx defaults >/dev/null
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d nginx start || true
+        else
+            /etc/init.d/nginx start || true
+        fi
+    fi
+fi
