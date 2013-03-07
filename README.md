@@ -15,8 +15,9 @@ I'm not an expert in debian package management, so some steps here are probaly
 stupid. I don't know any better right now. 
 
 1. Download latest version of nginx
-
-    wget http://nginx.org/download/nginx-1.3.14.tar.gz
+```
+	wget http://nginx.org/download/nginx-1.3.14.tar.gz
+```
 
 2. Rename the tarball to something debian wants to work with
 
@@ -54,6 +55,8 @@ Install
 
 If all of the above sounds like crazy talk to you, it does to me, you can just
 download/wget the repository off our CDN, and do a dpkg -i 
+
+Link for direct download: https://532fc975870e3f7ac694-d3c8ef7013f91d32e2e4b8caf6f33e0a.ssl.cf2.rackcdn.com/nginx_1.3.14-1_amd64.deb
 
 These builds are working great for us, on Ubuntu 12.04 systems, and I'm only
 going to support them on that for the time being.   
