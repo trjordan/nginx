@@ -20,34 +20,37 @@ stupid. I don't know any better right now.
 ```
 
 2. Rename the tarball to something debian wants to work with
-
+```
     mv nginx-1.3.14.tar.gz ngginx_1.3.14.orig.tar.gz
-
+```
 3. Download this repository
-    
+
+```    
     git clone git@github.com:zippykid/nginx.git
     mv nginx/debian debian
-
+```
 4. Make sure we know to work with the right version of nginx
-
+```
     vim debian/changelog
+```
 Change the version string to apply to the version we're building
 
 5. Download the SPDY patch and patch the source. 
-    
+```    
     wget http://nginx.org/patches/spdy/patch.spdy.txt
     patch -p1 < patch.spdy.txt
-
+```
 6. Build your package 
-
+```
     debuild -us -uc
+```
 If this is the first time you patched the source, you'll see an error message,
 this just means the package builder saw a difference between the original
 source file, and what you're trying to build. You can tell dpkg that this
 is a patch by doing the following
-
+```
     dpkg-source --commit
-
+```
 You'll be asked to give the patch a name ```spdy``` is a good name .. 
 
 Install
