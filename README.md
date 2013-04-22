@@ -6,12 +6,30 @@ This set of files lets us build Nginx 1.3.X for our systems quickly.
 What's the difference?
 =====================
 
-We use the SPDY patch, the Nginx Cache purge module, and sometimes the pagespeed modules 
+At ZippyKid, we don't use the stock Nginx. We've added some modules for our use.
+
+1. The Pagespeed module by the Google Pagepseed team https://github.com/pagespeed/ngx_pagespeed
+1. The cache purge module https://github.com/FRiCKLE/ngx_cache_purge
+1. The SPDY patches that are now part of 1.3.x
+
+Pre Reqs.
+=========
+
+You'll need a system running Ubuntu 12.04 or higher, anything prior to that should work, but
+it's not been tested, and will not be supported by us. 
+
+```
+    mkdir ~/src
+    git clone git://github.com/FRiCKLE/ngx_cache_purge.git
+    git clone git://github.com/pagespeed/ngx_pagespeed.git
+    sudo apt-get install devscripts build-essential autotools-dev debhelper
+```
+
 
 Building your own
 =================
 
-I'm not an expert in debian package management, so some steps here are probaly
+I'm not an expert in debian package management, so some steps here are probably
 stupid. I don't know any better right now. 
 
 1. Download latest version of nginx
