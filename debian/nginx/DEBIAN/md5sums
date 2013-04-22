@@ -1,9 +1,9 @@
-00300491664a04fa3ba28a10391e3959  usr/sbin/nginx
-19fb69eeb3b51632ea0fcad38a8fd6e3  usr/share/doc/nginx/CHANGES.gz
-75f305cd09a7453fb9d493f927464662  usr/share/doc/nginx/CHANGES.ru.gz
+c2e28ad0a52eafe5bd53a654bd2b1d20  usr/sbin/nginx
+a91f9f5bee592d4d6214a21f6a842378  usr/share/doc/nginx/CHANGES.gz
+d1fd984ec9e663f6db8200f0ebec9514  usr/share/doc/nginx/CHANGES.ru.gz
 6a35d7240f0011220c3ae328e9e0d5ec  usr/share/doc/nginx/README
 967c3d833e66632c6196f48a3110f34d  usr/share/doc/nginx/README.Debian
-e814dd57ea61197d29ad756d58231f63  usr/share/doc/nginx/changelog.Debian.gz
+0e910c9cf8b391c2180bed97a23821c6  usr/share/doc/nginx/changelog.Debian.gz
 fba240d1ddcc9ae7b25c1acce2b846a5  usr/share/doc/nginx/copyright
 d74f9cdd604653c22c6752c46fffd587  usr/share/nginx/html/50x.html
 e3eb0a1df437f3f97a64aca5952c8ea0  usr/share/nginx/html/index.html

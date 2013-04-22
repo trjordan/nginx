@@ -1,8 +1,8 @@
 Package: nginx
-Version: 1.3.14-1
+Version: 1.3.16-1
 Architecture: amd64
 Maintainer: Vid Luther <vid@zippykid.com>
-Installed-Size: 951
+Installed-Size: 957
 Depends: libc6 (>= 2.14), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.2.0)
 Section: unknown
 Priority: extra
