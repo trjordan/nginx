@@ -20,6 +20,7 @@ it's not been tested, and will not be supported by us.
 
 ```
     mkdir ~/src
+    cd ~/src
     git clone git://github.com/FRiCKLE/ngx_cache_purge.git
     git clone git://github.com/pagespeed/ngx_pagespeed.git
     sudo apt-get install devscripts build-essential autotools-dev debhelper
