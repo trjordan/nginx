@@ -16,18 +16,20 @@ stupid. I don't know any better right now.
 
 1. Download latest version of nginx
 ```
-	wget http://nginx.org/download/nginx-1.3.14.tar.gz
+	wget http://nginx.org/download/nginx-1.3.16.tar.gz
 ```
 
 2. Rename the tarball to something debian wants to work with
 ```
-    mv nginx-1.3.14.tar.gz ngginx_1.3.14.orig.tar.gz
+    mv nginx-1.3.16.tar.gz nginx_1.3.16.orig.tar.gz
+    tar zxf nginx_1.3.16.orig.tar.gz
+    cd nginx-1.3.16/
 ```
 3. Download this repository
 
 ```    
-    git clone git@github.com:zippykid/nginx.git
-    mv nginx/debian debian
+    git clone git@github.com:zippykid/nginx.git zippykid
+    mv zippykid/debian debian
 ```
 4. Make sure we know to work with the right version of nginx
 ```
@@ -35,11 +37,6 @@ stupid. I don't know any better right now.
 ```
 Change the version string to apply to the version we're building
 
-5. Download the SPDY patch and patch the source. 
-```    
-    wget http://nginx.org/patches/spdy/patch.spdy.txt
-    patch -p1 < patch.spdy.txt
-```
 6. Build your package 
 ```
     debuild -us -uc
@@ -51,7 +48,7 @@ is a patch by doing the following
 ```
     dpkg-source --commit
 ```
-You'll be asked to give the patch a name ```spdy``` is a good name .. 
+You'll be asked to give the patch a name ```pagespeed``` is a good name .. 
 
 Install
 =======
@@ -59,7 +56,7 @@ Install
 If all of the above sounds like crazy talk to you, it does to me, you can just
 download/wget the repository off our CDN, and do a dpkg -i 
 
-Link for direct download: https://532fc975870e3f7ac694-d3c8ef7013f91d32e2e4b8caf6f33e0a.ssl.cf2.rackcdn.com/nginx_1.3.14-1_amd64.deb
+Link for direct download: https://532fc975870e3f7ac694-d3c8ef7013f91d32e2e4b8caf6f33e0a.ssl.cf2.rackcdn.com/nginx_1.3.16-1_amd64.deb
 
 These builds are working great for us, on Ubuntu 12.04 systems, and I'm only
 going to support them on that for the time being.   
