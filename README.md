@@ -1,7 +1,7 @@
-Nginx 1.3 for ZippyKid
+Nginx 1.4 for ZippyKid
 ======================
 
-This set of files lets us build Nginx 1.3.X for our systems quickly. 
+This set of files lets us build Nginx 1.4.X for our systems quickly. 
 
 What's the difference?
 =====================
@@ -10,7 +10,6 @@ At ZippyKid, we don't use the stock Nginx. We've added some modules for our use.
 
 1. The Pagespeed module by the Google Pagepseed team https://github.com/pagespeed/ngx_pagespeed
 1. The cache purge module https://github.com/FRiCKLE/ngx_cache_purge
-1. The SPDY patches that are now part of 1.3.x
 
 Pre Reqs.
 =========
