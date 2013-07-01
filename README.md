@@ -18,14 +18,14 @@ You'll need a system running Ubuntu 12.04 or higher, anything prior to that shou
 it's not been tested, and will not be supported by us. 
 
 ```
-    sudo apt-get install devscripts build-essential autotools-dev debhelper
+    sudo apt-get install devscripts build-essential autotools-dev debhelper git libpcre3-dev libssl-dev
     mkdir ~/src
     cd ~/src
     git clone git://github.com/FRiCKLE/ngx_cache_purge.git
     git clone git://github.com/pagespeed/ngx_pagespeed.git
     cd ngx_pagespeed
-    wget https://dl.google.com/dl/page-speed/psol/1.5.27.2.tar.gz
-    tar -xzvf 1.5.27.2.tar.gz
+    wget https://dl.google.com/dl/page-speed/psol/1.5.27.3.tar.gz
+    tar -xzvf 1.5.27.3.tar.gz
 ```
 
 
