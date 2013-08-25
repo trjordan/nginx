@@ -22,10 +22,11 @@ it's not been tested, and will not be supported by us.
     mkdir ~/src
     cd ~/src
     git clone git://github.com/FRiCKLE/ngx_cache_purge.git
-    git clone git://github.com/pagespeed/ngx_pagespeed.git
-    cd ngx_pagespeed
-    wget https://dl.google.com/dl/page-speed/psol/1.5.27.3.tar.gz
-    tar -xzvf 1.5.27.3.tar.gz
+    wget https://github.com/pagespeed/ngx_pagespeed/archive/release-1.6.29.5-beta.zip
+    unzip release-1.6.29.5-beta.zip
+    cd ngx_pagespeed-release-1.6.29.5-beta/ 
+    wget https://dl.google.com/dl/page-speed/psol/1.6.29.5.tar.gz
+    tar -xzvf 1.6.29.5.tar.gz
 ```
 
 
