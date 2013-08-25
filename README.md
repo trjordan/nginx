@@ -37,14 +37,14 @@ stupid. I don't know any better right now.
 
 1. Download latest version of nginx
 ```
-	wget http://nginx.org/download/nginx-1.4.1.tar.gz
+	wget http://nginx.org/download/nginx-1.4.2.tar.gz
 ```
 
 2. Rename the tarball to something debian wants to work with
 ```
-    mv nginx-1.4.1.tar.gz nginx_1.4.1.orig.tar.gz
-    tar zxf nginx_1.4.1.orig.tar.gz
-    cd nginx-1.4.1/
+    mv nginx-1.4.2.tar.gz nginx_1.4.2.orig.tar.gz
+    tar zxf nginx_1.4.2.orig.tar.gz
+    cd nginx-1.4.2/
 ```
 3. Download this repository
 
