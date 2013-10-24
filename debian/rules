@@ -43,6 +43,7 @@ override_dh_auto_build:
 		--with-http_spdy_module \
 		--add-module=../../src/ngx_pagespeed \
 		--add-module=../../src/ngx_cache_purge \
+		--add-module=../../src/nginx_oboe \
 		--with-ipv6
 	dh_auto_build
 

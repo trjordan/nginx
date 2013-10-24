@@ -27,6 +27,10 @@ it's not been tested, and will not be supported by us.
     cd ngx_pagespeed-release-1.6.29.5-beta/ 
     wget https://dl.google.com/dl/page-speed/psol/1.6.29.5.tar.gz
     tar -xzvf 1.6.29.5.tar.gz
+
+    # Install AppNeta TraceView module, called oboe
+    wget https://files.tracelytics.com/src/nginx_oboe-latest.tar.gz
+    tar -xzvf nginx_oboe-latest.tar.gz
 ```
 
 
